@@ -156,28 +156,28 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">Creating A Documentation Website</h2>
           
-          <div class="content"><p>This document provides instructions on creating and deploying a document website in GitHub with Hugo on a Windows 7 computer.</p>
-<h1 id="prerequisites">Prerequisites</h1>
-<p>Before creating a document website, make sure the following conditions are met:</p>
-<ul>
+          <div class="content"><p>This document provides instructions on creating and deploying a documentation website in GitHub with Hugo on a Windows 7 computer.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before creating a documentation website, make sure the following conditions are met:</p>
+<ol>
 <li>Hugo and Git are properly installed and configured on your computer.</li>
 <li>A GitHub account is created.</li>
-</ul>
-<h1 id="steps">Steps</h1>
-<h3 id="1-create-a-website-with-hugo">1. Create a website with Hugo.</h3>
-<h4 id="11-open-command-prompt">1.1 Open Command Prompt.</h4>
+</ol>
+<h3 id="steps">Steps</h3>
+<h4 id="1-create-a-website-with-hugo">1. Create a website with Hugo.</h4>
+<h5 id="11-open-command-prompt">1.1 Open Command Prompt.</h5>
 <p>Click the <strong>Start</strong> button on the desktop, and then type <strong>cmd</strong> in the search box.</p>
 <p>Expected outcome:<br>
 Command Prompt appears as follows.<br>
 <img src="/images/cmd_1.jpg" alt=""></p>
-<h4 id="12-create-a-website-by-running-the-following-command-in-command-prompt">1.2 Create a website by running the following command in Command Prompt:</h4>
+<h5 id="12-create-a-website-by-running-the-following-command-in-command-prompt">1.2 Create a website by running the following command in Command Prompt:</h5>
 <p><code>hugo new site &lt;website_name&gt;</code><br>
 In the command above, <code>&lt;website_name&gt;</code> is the website to be created.</p>
 <p>For example:<br>
 <code>hugo new site website</code></p>
 <p>Expected outcome:<br>
 <code>Congratulations! Your new Hugo site is created in C:\Users\Administrator\website.</code></p>
-<h4 id="13-download-a-hugo-theme">1.3 Download a Hugo theme.</h4>
+<h5 id="13-download-a-hugo-theme">1.3 Download a Hugo theme.</h5>
 <ol>
 <li>
 <p>Open <code>https://themes.gohugo.io/tags/documentation/</code> in an explorer, and then click the theme you are interested.<br>
@@ -202,7 +202,7 @@ For example:<br>
 <img src="/images/e10c_3.jpg" alt=""></p>
 </li>
 </ol>
-<h4 id="14-create-a-document-in-the-website-with-the-commands">1.4 Create a document in the website with the commands:</h4>
+<h5 id="14-create-a-document-in-the-website-with-the-commands">1.4 Create a document in the website with the commands:</h5>
 <p><code>cd &lt;website_name&gt;</code><br>
 <code>hugo new post/&lt;document_name&gt;.md</code></p>
 <p>In the command above, <code>&lt;document_name&gt;</code> is the document to be created.<br>
@@ -211,11 +211,19 @@ For example:<br>
 <code>hugo new post/blog.md</code></p>
 <p>Expected outcome:<br>
 <code>C:\Users\Administrator\website\post\blog.md created</code></p>
-<h4 id="15-edit-this-document">1.5 Edit this document.</h4>
+<h5 id="15-edit-this-document">1.5 Edit this document.</h5>
+<ol>
+<li>
 <p>Open <code>blog.md</code> with notepad++, and then add the following row above row <code>draft: true</code>:<br>
 <code>type : &quot;docs&quot;</code></p>
-<p>Then, you can edit <code>blog.md</code> by following the Markdown syntax.</p>
-<h4 id="16-start-the-website-server-locally">1.6 Start the website server locally.</h4>
+</li>
+<li>
+<p>Save <code>blog.md</code>.</p>
+<p>Tip:<br>
+When editing the content in <code>blog.md</code>, follow the Markdown syntax.</p>
+</li>
+</ol>
+<h5 id="16-start-the-website-server-locally">1.6 Start the website server locally.</h5>
 <ol>
 <li>
 <p>Go back to the website root directory with the command:<br>
@@ -237,12 +245,12 @@ For example:<br>
 <img src="/images/local_sever_2.jpg" alt=""></p>
 </li>
 </ol>
-<h3 id="2-deploy-the-created-website-to-github">2. Deploy the created website to GitHub.</h3>
-<h4 id="21-sign-in-to-github">2.1 Sign in to GitHub.</h4>
-<h4 id="22-create-a-new-repository-in-github">2.2 Create a new repository in GitHub.</h4>
+<h4 id="2-deploy-the-created-website-to-github">2. Deploy the created website to GitHub.</h4>
+<h5 id="21-sign-in-to-github">2.1 Sign in to GitHub.</h5>
+<h5 id="22-create-a-new-repository-in-github">2.2 Create a new repository in GitHub.</h5>
 <ol>
 <li>
-<p>Click <strong>+</strong> and choose <strong>New repository</strong> from the menu.<br>
+<p>In the GitHub page, click <strong>+</strong> and choose <strong>New repository</strong> from the menu.<br>
 <img src="/images/create_repo.jpg" alt=""></p>
 <p>Expected outcome:<br>
 The <strong>Create a new repository</strong> page appears.</p>
@@ -260,7 +268,7 @@ Expected outcome:<br>
 The new repository is created successfully.</p>
 </li>
 </ol>
-<h3 id="23-build-a-public-website-by-running-the-following-command-in-command-prompt">2.3 Build a public website by running the following command in Command Prompt:</h3>
+<h5 id="23-build-a-public-website-by-running-the-following-command-in-command-prompt">2.3 Build a public website by running the following command in Command Prompt:</h5>
 <p><code>hugo --theme=dot-hugo-documentation-theme --baseUrl=https://&lt;github_page&gt; --buildDrafts</code><br>
 In the command above, <code>--theme=dot-hugo-documentation-theme</code> specifies the Dot theme for the website, and <code>&lt;github_page&gt;</code> is the name of the repository you created in GitHub.</p>
 <p>For example:<br>
@@ -268,7 +276,7 @@ In the command above, <code>--theme=dot-hugo-documentation-theme</code> specifie
 <p>Expected outcome:<br>
 The website is built successfully and the <code>public</code> directory is created in the website root directory.<br>
 <img src="/images/build_site.jpg" alt=""></p>
-<h3 id="24-upload-the-public-directory-to-github">2.4 Upload the <code>public</code> directory to GitHub.</h3>
+<h5 id="24-upload-the-public-directory-to-github">2.4 Upload the <code>public</code> directory to GitHub.</h5>
 <ol>
 <li>
 <p>Go to the <code>public</code> directory with the command:<br>
@@ -318,7 +326,7 @@ Files in the local repository are pushed to the GitHub repository.<br>
 <p>Verify if the website is available in GitHub.<br>
 Visit the website at URL <code>https://&lt;github_page&gt;</code>, wherein <code>&lt;github_page&gt;</code> is the name of the repository you created in GitHub.</p>
 <p>For example:<br>
-<a href="https://xin-kevin.github.io/">https://xin-kevin.github.io/</a></p>
+<code>https://xin-kevin.github.io/</code></p>
 <p>Expected outcome:<br>
 The webpage appears.</p>
 <p>For example:<br>
