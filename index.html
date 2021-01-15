@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <title>My New Hugo Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="generator" content="Hugo 0.80.0" />
+  
+  <!-- ** CSS Plugins Needed for the Project ** -->
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://xin-kevin.github.io/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://xin-kevin.github.io/plugins/themify-icons/themify-icons.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://xin-kevin.github.io/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color:;
+    --body-color:;
+    --text-color:;
+    --text-color-dark:;
+    --white-color:;
+    --light-color:;
+    --font-family:;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="https://xin-kevin.github.io/css/style.min.css" rel="stylesheet" media="screen"/>
+  
+<!-- ** JS Plugins Needed for the Project ** -->
+
+<!-- jquiry -->
+<script src="https://xin-kevin.github.io/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="https://xin-kevin.github.io/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://xin-kevin.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="https://xin-kevin.github.io/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+
+  
+
+  <!-- create /layouts/partials/overrides/header.html in your own theme or root directory to add your custom content here -->
+
+
+</head>
+
+  
+  <body>
+    
+    <!-- header -->
+    <header class="banner bg-primary" data-background="https://xin-kevin.github.io/">
+      <nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      My New Hugo Site
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <!-- banner -->
+<div class="container section">
+	<div class="row">
+		<div class="col-lg-8 text-center mx-auto">
+			<h1 class="text-white mb-3"></h1>
+			<p class="text-white mb-4"></p>
+			<div class="position-relative">
+				<input id="search" class="form-control" placeholder="">
+				<i class="ti-search search-icon"></i>
+				
+				
+				
+				
+				<script>
+					$(function() {
+					var projects = [
+						
+						{
+							value: "Creating A Documentation Website",
+							label: "<p>This document provides instructions on creating and deploying a document website in GitHub with Hugo on a Windows 7 computer.\nPrerequisites Before creating a document website, make sure the following conditions are met:\n Hugo and Git are properly installed and configured on your computer. A GitHub account is created.  Steps 1. Create a website with Hugo. 1.1 Open Command Prompt. Click the Start button on the desktop, and then type cmd in the search box.\nExpected outcome:\nCommand Prompt appears as follows.\n1.2 Create a website by running the following command in Command Prompt: hugo new site \u0026lt;website_name\u0026gt;\nIn the command above, \u0026lt;website_name\u0026gt; is the website to be created.\nFor example:\nhugo new site website\nExpected outcome:\nCongratulations! Your new Hugo site is created in C:\\Users\\Administrator\\website.\n1.3 Download a Hugo theme.   Open https:\/\/themes.gohugo.io\/tags\/documentation\/ in an explorer, and then click the theme you are interested.\nFor example, the Dot theme is chosen.\nThe following procedure is described with the Dot theme as an example.\n  Clone the Dot theme into the themes directory by running the clone command in Command Prompt:\ngit clone git@github.com:themefisher\/dot-hugo-documentation-theme.git themes\/dot-hugo-documentation-theme\nExpected outcome:\nCloning into \u0027themes\/dot-hugo-documentation-theme\u0027...\n...\nReceiving objects: 100% (892\/892), 4.56 MiB | 10.00 KiB\/s, done.\nResolving deltas: 100% (428\/428), done.\n  Go to the themes directory to check the Dot theme with the commands:\ncd themes\ndir\nYou can find the Dot theme in the themes directory.\nFor example:\n  1.4 Create a document in the website with the commands: cd \u0026lt;website_name\u0026gt;\nhugo new post\/\u0026lt;document_name\u0026gt;.md\nIn the command above, \u0026lt;document_name\u0026gt; is the document to be created.\nFor example:\ncd website\nhugo new post\/blog.md\nExpected outcome:\nC:\\Users\\Administrator\\website\\post\\blog.md created\n1.5 Edit this document. Open blog.md with notepad\u002b\u002b, and then add the following row above row draft: true:\ntype : \u0026quot;docs\u0026quot;\nThen, you can edit blog.md by following the Markdown syntax.\n1.6 Start the website server locally.   Go back to the website root directory with the command:\ncd .. \n  Start the website server locally with the command:\nhugo server -t dot-hugo-documentation-theme --buildDrafts\nIn the command above, -t dot-hugo-documentation-theme specifies the Dot theme for the website.\nExpected outcome:\nWeb Server is available at http:\/\/localhost:1313\/ (bind address 127.0.0.1) The URL of the web server is http:\/\/localhost:1313\/.\n  Visit the local website at URL http:\/\/localhost:1313\/.\nExpected outcome:\nThe webpage appears.\nFor example:\n  2. Deploy the created website to GitHub. 2.1 Sign in to GitHub. 2.2 Create a new repository in GitHub.   Click \u002b and choose New repository from the menu.\nExpected outcome:\nThe Create a new repository page appears.\n  In the Create a new repository page, input the repository name in the Repository name field.\nNote:\nMake sure the repository name is \u0026lt;owner_name\u0026gt;.github.io, wherein \u0026lt;owner_name\u0026gt; is the value of the Owner field.\nFor example:\n  Click the Create repository button.\nExpected outcome:\nThe new repository is created successfully.\n  2.3 Build a public website by running the following command in Command Prompt: hugo --theme=dot-hugo-documentation-theme --baseUrl=https:\/\/\u0026lt;github_page\u0026gt; --buildDrafts\nIn the command above, --theme=dot-hugo-documentation-theme specifies the Dot theme for the website, and \u0026lt;github_page\u0026gt; is the name of the repository you created in GitHub.\nFor example:\nhugo --theme=dot-hugo-documentation-theme --baseUrl=https:\/\/xin-kevin.github.io\/ --buildDrafts\nExpected outcome:\nThe website is built successfully and the public directory is created in the website root directory.\n2.4 Upload the public directory to GitHub.   Go to the public directory with the command:\ncd public\n  Initialize the public directory as a Git repository with the command:\ngit init\nExpected outcome:\nThe public directory is initialized.\nFor example:\nInitialized empty Git repository in C:\/Users\/Administrator\/website\/public\/.git\/\n  Add files in the public directory to the local repository with the command:\ngit add .\nExpected outcome:\nFiles in the public directory are added to the local Git repository.\n  Commit the files added in the local repository with the command:\ngit commit -m \u0026quot;\u0026lt;commit_message\u0026gt;\u0026quot;\nIn the command above, \u0026lt;commit_message\u0026gt; is the commit message.\nFor example:\ngit commit -m \u0026quot;first commit\u0026quot; \nExpected outcome:\nThe files are committed and prepared to be pushed to the remote repository.\nFor example:\n  Add the remote repository for the local repository with the command:\ngit remote add origin \u0026lt;Github_repository\u0026gt;.git\nIn the command above, \u0026lt;Github_repository\u0026gt; is the URL of the GitHub repository created for deploying the website.\nFor example:\ngit remote add origin http:\/\/github.com\/xin-kevin\/xin-kevin.github.io.git\n  Push the files in the local repository to the GitHub repository with the command:\ngit push -u origin master\nInput your GitHub account name and password as required.\nExpected outcome:\nFiles in the local repository are pushed to the GitHub repository.\n  Verify if the website is available in GitHub.\nVisit the website at URL https:\/\/\u0026lt;github_page\u0026gt;, wherein \u0026lt;github_page\u0026gt; is the name of the repository you created in GitHub.\nFor example:\nhttps:\/\/xin-kevin.github.io\/\nExpected outcome:\nThe webpage appears.\nFor example:\n  </p>",
+							url:"https:\/\/xin-kevin.github.io\/post\/blog\/"
+						},
+						
+						{
+							value: "My New Hugo Site",
+							label: "<p></p>",
+							url:"https:\/\/xin-kevin.github.io\/"
+						},
+						
+						{
+							value: "Posts",
+							label: "<p></p>",
+							url:"https:\/\/xin-kevin.github.io\/post\/"
+						},
+						
+						{
+							value: "Categories",
+							label: "<p></p>",
+							url:"https:\/\/xin-kevin.github.io\/categories\/"
+						},
+						
+						{
+							value: "Tags",
+							label: "<p></p>",
+							url:"https:\/\/xin-kevin.github.io\/tags\/"
+						},
+						
+					];
+					$( "#search" ).autocomplete({
+						source: projects
+					})
+					.data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+						return $( "<li>" )
+						.append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>" + item.label )
+						.appendTo( ul );
+					};
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /banner -->
+    </header>
+    <!-- /header -->
+    
+    
+
+  <!-- topics -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title"></h2>
+        </div>
+        <!-- topic-item -->
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://xin-kevin.github.io/post/blog/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Creating A Documentation Website</h3>
+            
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- /topics -->
+
+  
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+       <p class="mb-md-0 mb-4"></p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="https://xin-kevin.github.io/js/script.min.js"></script>
+  </body>
+
+</html>
