@@ -15,7 +15,7 @@
       <guid>https://xin-kevin.github.io/post/blog/</guid>
       <description>This document provides instructions on creating and deploying a documentation website in GitHub with Hugo on a Windows 7 computer.
 Prerequisites Before creating a documentation website, make sure the following conditions are met:
- Hugo and Git are properly installed and configured on your computer. A GitHub account is created.  Steps 1. Create a website with Hugo. 1.1 Open Command Prompt. Click the Start button on the desktop, and then type cmd in the search box.</description>
+ Notepad++, Hugo and Git are properly installed and configured on your computer. A GitHub account is created.  Steps 1. Create a website with Hugo. 1.1 Open Command Prompt. Click the Start button on the desktop, and then type cmd in the search box.</description>
     </item>
     
   </channel>
